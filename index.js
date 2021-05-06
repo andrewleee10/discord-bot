@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const fs = require('fs')
+require('dotenv').config()
 
 const client = new Discord.Client()
 
@@ -31,4 +32,4 @@ client.on('message', message => {
   }
 })
 
-client.login('ODMxNTk2OTgxOTU2MTE2NDkw.YHXjCg.qjbnDeqtBZ1nWnT0yIdZwHCP9C0')
+client.login(process.env.TOKEN)
